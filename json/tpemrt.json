@@ -1,0 +1,1578 @@
+var station2 = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "動物園"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.579501,
+          24.998205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "木柵"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57312700000011,
+          24.99824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "萬芳社區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5680880000001,
+          24.99857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "萬芳醫院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5580920000001,
+          24.99932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "辛亥"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.557046,
+          25.005455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "麟光"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.558834,
+          25.018495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "六張犁"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55302,
+          25.02381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "科技大樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543462,
+          25.02612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大安"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54237,
+          25.033311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝復興"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.545026,
+          25.041749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南京復興"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.544303,
+          25.052044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中山國中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.544215,
+          25.06085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松山機場"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55201000000011,
+          25.062908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大直"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5467900000001,
+          25.07943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "劍南路"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.555582,
+          25.08483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西湖"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56722700000012,
+          25.08216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "港墘"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57516,
+          25.08007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文德"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.584999,
+          25.078455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "內湖"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.594363,
+          25.083675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大湖公園"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.60221400000012,
+          25.083805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "葫洲"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.607146,
+          25.07271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東湖"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.61153500000012,
+          25.067455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南港軟體園區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.615,
+          25.05992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南港展覽館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.616861,
+          25.054919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "象山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.570116,
+          25.032395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北101/世貿"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.563667,
+          25.032865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "信義安和"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55232600000011,
+          25.033015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大安"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54237,
+          25.033311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大安森林公園"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.536151,
+          25.033225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東門"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528766,
+          25.033894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中正紀念堂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518273,
+          25.032767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台大醫院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51602,
+          25.041399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北車站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517415,
+          25.04631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520364,
+          25.052621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "雙連"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520685,
+          25.057575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "民權西路"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.519585,
+          25.06235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "圓山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520074,
+          25.071409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "劍潭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.524955,
+          25.084201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "士林"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52623,
+          25.093492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "芝山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522546,
+          25.102718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "明德"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518785,
+          25.109815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "石牌"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.515572,
+          25.114455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "唭哩岸"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.506234,
+          25.120852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "奇岩"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.50114,
+          25.12547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北投"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49864800000012,
+          25.131819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新北投"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.502595,
+          25.136931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "復興崗"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.48545600000011,
+          25.137497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠義"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.47329800000011,
+          25.130923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "關渡"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.467,
+          25.12551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "竹圍"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45955,
+          25.1369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "紅樹林"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45880000000011,
+          25.15399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "淡水"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.445805,
+          25.167745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新店"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53746,
+          24.95761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新店區公所"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5413,
+          24.96744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "七張"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.542985,
+          24.97545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小碧潭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5305800000001,
+          24.97188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大坪林"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5413400000001,
+          24.98272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "景美"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.540697,
+          24.992824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "萬隆"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.539008,
+          25.001978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "公館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53435800000011,
+          25.014781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台電大樓"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52814300000011,
+          25.020733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "古亭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522868,
+          25.026373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中正紀念堂"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518273,
+          25.032767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小南門"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51088,
+          25.035585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西門"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.508175,
+          25.042025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "北門"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.510184,
+          25.049554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520364,
+          25.052621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松江南京"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53285,
+          25.052693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南京復興"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.544303,
+          25.052044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北小巨蛋"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55254900000011,
+          25.05152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南京三民"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5647100000001,
+          25.051588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.577706,
+          25.050118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南勢角"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.509237,
+          24.990065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "景安"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.505114,
+          24.99392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永安市場"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.511225,
+          25.002895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "頂溪"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.515462,
+          25.013858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "古亭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522868,
+          25.026373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "東門"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528766,
+          25.033894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝新生"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53321,
+          25.042498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "松江南京"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53285,
+          25.052693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "行天宮"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53315,
+          25.05924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中山國小"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.526609,
+          25.062665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "民權西路"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.519585,
+          25.06235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大橋頭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.513003,
+          25.06322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北橋"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.500575,
+          25.063075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "菜寮"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.491421,
+          25.059451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三重"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.48422,
+          25.05571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "先嗇宮"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.47165,
+          25.04632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "頭前庄"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.461655,
+          25.039735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新莊"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45218000000011,
+          25.03608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "輔大"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.435735,
+          25.03279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "丹鳳"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.422422,
+          25.029073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "迴龍"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.411757,
+          25.022107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三重國小"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49701,
+          25.070275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三和國中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.486795,
+          25.07646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "徐匯中學"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.479945,
+          25.080485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三民高中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.473365,
+          25.085425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "蘆洲"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.46471,
+          25.09152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "頂埔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4205,
+          24.96012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永寧"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43613,
+          24.96682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "土城"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.44432,
+          24.97313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "海山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.44873,
+          24.985305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "亞東醫院"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.452465,
+          24.99828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "府中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.459276,
+          25.008465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "板橋"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.462305,
+          25.013825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新埔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.468055,
+          25.02327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "江子翠"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.47257,
+          25.030265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "龍山寺"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.500325,
+          25.03528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西門"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.508175,
+          25.042025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "台北車站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517415,
+          25.04631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "善導寺"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.523885,
+          25.04468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝新生"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53321,
+          25.042498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝復興"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.545026,
+          25.041749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "忠孝敦化"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55045,
+          25.041505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "國父紀念館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55781500000012,
+          25.04137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市政府"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.565685,
+          25.041135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "永春"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5762,
+          25.040855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "後山埤"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.58227000000011,
+          25.044715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "昆陽"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.593228,
+          25.050459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南港"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.60697,
+          25.052035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南港展覽館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.616861,
+          25.054919
+        ]
+      }
+    }
+  ]
+}

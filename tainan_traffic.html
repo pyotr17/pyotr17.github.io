@@ -1,0 +1,190 @@
+<html>
+
+<head>
+<title>台南市交通旅次</title>
+<meta charset="utf-8">
+<style>
+	body {
+		padding: 40px;
+		font-family: "Microsoft JhengHei";
+		text-align: center;
+	}
+
+	#chartdiv {
+		width: 100%;
+		height: 800px;
+	}
+</style>
+</head>
+
+<body>
+<h1>2012年 台南市各區交通旅次分布</h1>
+<p>資料來自2012年6月至9月的交通抽樣調查，其中包含行駛汽車、機車、腳踏車等交通工具的旅次數量，並排除起訖點在台南市外的旅次。</p>
+<div id="chartdiv"></div>
+
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+<script type="text/javascript">
+am4core.useTheme(am4themes_animated);
+
+var chart = am4core.create("chartdiv", am4charts.ChordDiagram);
+
+chart.colors.saturation = 0.3;
+chart.colors.step = 3;
+var colors = {
+    annan:chart.colors.next(),
+    bei:chart.colors.next(),
+    zhongxi:chart.colors.next(),
+    dong:chart.colors.next(),
+    anping:chart.colors.next(),
+    nan:chart.colors.next(),
+    yongkang:chart.colors.next(),
+    rende:chart.colors.next(),
+    gueren:chart.colors.next(),
+    guanmiao:chart.colors.next(),
+    longqi:chart.colors.next(),
+    xinhua:chart.colors.next(),
+    xinshi:chart.colors.next(),
+    shanhua:chart.colors.next(),
+    anding:chart.colors.next(),
+    shanshang:chart.colors.next(),
+    zuozhen:chart.colors.next(),
+    yujing:chart.colors.next(),
+    nanxi:chart.colors.next(),
+    nanhua:chart.colors.next(),
+    dongshan:chart.colors.next(),
+    baihe:chart.colors.next(),
+    lioying:chart.colors.next(),
+    houbi:chart.colors.next(),
+    xinying:chart.colors.next(),
+    yenshue:chart.colors.next(),
+    danei:chart.colors.next(),
+    liojia:chart.colors.next(),
+    guantien:chart.colors.next(),
+    xiaying:chart.colors.next(),
+    mado:chart.colors.next(),
+    xigang:chart.colors.next(),
+    xuejia:chart.colors.next(),
+    beimen:chart.colors.next(),
+    jiali:chart.colors.next(),
+    jiangjun:chart.colors.next(),
+    qigu:chart.colors.next()
+}
+
+chart.data = [
+{"from":"安南區", "color":colors.annan},
+{"from":"北區", "color":colors.bei},
+{"from":"中西區", "color":colors.zhongxi},
+{"from":"東區", "color":colors.dong},
+{"from":"安平區", "color":colors.anping},
+{"from":"南區", "color":colors.nan},
+{"from":"永康區", "color":colors.yongkang},
+{"from":"仁德區", "color":colors.rende},
+{"from":"歸仁區", "color":colors.gueren},
+{"from":"關廟區", "color":colors.guanmiao},
+{"from":"龍崎區", "color":colors.longqi},
+{"from":"新化區", "color":colors.xinhua},
+{"from":"新市區", "color":colors.xinshi},
+{"from":"善化區", "color":colors.shanhua},
+{"from":"安定區", "color":colors.anding},
+{"from":"山上區", "color":colors.shanshang},
+{"from":"左鎮區", "color":colors.zuozhen},
+{"from":"玉井區", "color":colors.yujing},
+{"from":"楠西區", "color":colors.nanxi},
+{"from":"南化區", "color":colors.nanhua},
+{"from":"東山區", "color":colors.dongshan},
+{"from":"白河區", "color":colors.baihe},
+{"from":"柳營區", "color":colors.lioying},
+{"from":"後壁區", "color":colors.houbi},
+{"from":"新營區", "color":colors.xinying},
+{"from":"鹽水區", "color":colors.yenshue},
+{"from":"大內區", "color":colors.danei},
+{"from":"六甲區", "color":colors.liojia},
+{"from":"官田區", "color":colors.guantien},
+{"from":"下營區", "color":colors.xiaying},
+{"from":"麻豆區", "color":colors.mado},
+{"from":"西港區", "color":colors.xigang},
+{"from":"學甲區", "color":colors.xuejia},
+{"from":"北門區", "color":colors.beimen},
+{"from":"佳里區", "color":colors.jiali},
+{"from":"將軍區", "color":colors.jiangjun},
+{"from":"七股區", "color":colors.qigu},
+
+{"from":"七股區","to":"七股區","value":1035},{"from":"七股區","to":"中西區","value":10},{"from":"七股區","to":"仁德區","value":6},{"from":"七股區","to":"永康區","value":1},{"from":"七股區","to":"安平區","value":3},{"from":"七股區","to":"安南區","value":13},{"from":"七股區","to":"西港區","value":11},{"from":"七股區","to":"佳里區","value":94},{"from":"七股區","to":"東區","value":2},{"from":"七股區","to":"將軍區","value":2},{"from":"七股區","to":"麻豆區","value":6},{"from":"七股區","to":"新化區","value":2},{"from":"七股區","to":"學甲區","value":2},{"from":"下營區","to":"下營區","value":1089},{"from":"下營區","to":"六甲區","value":10},{"from":"下營區","to":"官田區","value":9},{"from":"下營區","to":"東區","value":7},{"from":"下營區","to":"柳營區","value":12},{"from":"下營區","to":"麻豆區","value":15},{"from":"下營區","to":"善化區","value":2},{"from":"下營區","to":"新市區","value":6},{"from":"下營區","to":"新營區","value":33},{"from":"下營區","to":"鹽水區","value":8},{"from":"大內區","to":"大內區","value":409},{"from":"大內區","to":"山上區","value":8},{"from":"大內區","to":"永康區","value":16},{"from":"大內區","to":"玉井區","value":4},{"from":"大內區","to":"安定區","value":2},{"from":"大內區","to":"安南區","value":2},{"from":"大內區","to":"官田區","value":6},{"from":"大內區","to":"麻豆區","value":2},{"from":"大內區","to":"善化區","value":9},{"from":"大內區","to":"新化區","value":3},{"from":"大內區","to":"新市區","value":10},{"from":"山上區","to":"大內區","value":7},{"from":"山上區","to":"山上區","value":312},{"from":"山上區","to":"中西區","value":2},{"from":"山上區","to":"北區","value":2},{"from":"山上區","to":"左鎮區","value":3},{"from":"山上區","to":"永康區","value":7},{"from":"山上區","to":"安南區","value":2},{"from":"山上區","to":"麻豆區","value":7},{"from":"山上區","to":"善化區","value":17},{"from":"山上區","to":"新化區","value":18},{"from":"山上區","to":"新市區","value":21},{"from":"中西區","to":"七股區","value":10},{"from":"中西區","to":"中西區","value":4436},{"from":"中西區","to":"仁德區","value":98},{"from":"中西區","to":"北區","value":653},{"from":"中西區","to":"永康區","value":292},{"from":"中西區","to":"安平區","value":488},{"from":"中西區","to":"安定區","value":4},{"from":"中西區","to":"安南區","value":305},{"from":"中西區","to":"西港區","value":7},{"from":"中西區","to":"佳里區","value":9},{"from":"中西區","to":"官田區","value":2},{"from":"中西區","to":"東區","value":596},{"from":"中西區","to":"南區","value":534},{"from":"中西區","to":"將軍區","value":2},{"from":"中西區","to":"善化區","value":13},{"from":"中西區","to":"新化區","value":24},{"from":"中西區","to":"新市區","value":50},{"from":"中西區","to":"學甲區","value":3},{"from":"中西區","to":"龍崎區","value":3},{"from":"中西區","to":"歸仁區","value":35},{"from":"中西區","to":"關廟區","value":28},{"from":"仁德區","to":"七股區","value":5},{"from":"仁德區","to":"中西區","value":111},{"from":"仁德區","to":"仁德區","value":2883},{"from":"仁德區","to":"北區","value":81},{"from":"仁德區","to":"永康區","value":228},{"from":"仁德區","to":"安平區","value":49},{"from":"仁德區","to":"安定區","value":2},{"from":"仁德區","to":"安南區","value":54},{"from":"仁德區","to":"佳里區","value":3},{"from":"仁德區","to":"東區","value":516},{"from":"仁德區","to":"南區","value":121},{"from":"仁德區","to":"後壁區","value":4},{"from":"仁德區","to":"麻豆區","value":3},{"from":"仁德區","to":"善化區","value":12},{"from":"仁德區","to":"新化區","value":17},{"from":"仁德區","to":"新市區","value":39},{"from":"仁德區","to":"新營區","value":2},{"from":"仁德區","to":"學甲區","value":2},{"from":"仁德區","to":"歸仁區","value":275},{"from":"仁德區","to":"關廟區","value":52},{"from":"六甲區","to":"下營區","value":13},{"from":"六甲區","to":"六甲區","value":591},{"from":"六甲區","to":"永康區","value":2},{"from":"六甲區","to":"玉井區","value":2},{"from":"六甲區","to":"安南區","value":4},{"from":"六甲區","to":"官田區","value":89},{"from":"六甲區","to":"東山區","value":4},{"from":"六甲區","to":"柳營區","value":8},{"from":"六甲區","to":"麻豆區","value":15},{"from":"六甲區","to":"善化區","value":4},{"from":"六甲區","to":"新市區","value":8},{"from":"六甲區","to":"新營區","value":47},{"from":"六甲區","to":"關廟區","value":4},{"from":"北門區","to":"北門區","value":418},{"from":"北門區","to":"永康區","value":2},{"from":"北門區","to":"安南區","value":3},{"from":"北門區","to":"佳里區","value":20},{"from":"北門區","to":"東區","value":2},{"from":"北門區","to":"將軍區","value":3},{"from":"北門區","to":"麻豆區","value":4},{"from":"北門區","to":"新市區","value":6},{"from":"北門區","to":"新營區","value":7},{"from":"北門區","to":"學甲區","value":50},{"from":"北區","to":"七股區","value":2},{"from":"北區","to":"山上區","value":3},{"from":"北區","to":"中西區","value":641},{"from":"北區","to":"仁德區","value":83},{"from":"北區","to":"北區","value":3942},{"from":"北區","to":"永康區","value":613},{"from":"北區","to":"白河區","value":5},{"from":"北區","to":"安平區","value":238},{"from":"北區","to":"安定區","value":7},{"from":"北區","to":"安南區","value":500},{"from":"北區","to":"西港區","value":20},{"from":"北區","to":"佳里區","value":16},{"from":"北區","to":"東區","value":571},{"from":"北區","to":"南區","value":219},{"from":"北區","to":"將軍區","value":4},{"from":"北區","to":"麻豆區","value":7},{"from":"北區","to":"善化區","value":12},{"from":"北區","to":"新化區","value":25},{"from":"北區","to":"新市區","value":110},{"from":"北區","to":"新營區","value":4},{"from":"北區","to":"歸仁區","value":27},{"from":"北區","to":"關廟區","value":18},{"from":"左鎮區","to":"山上區","value":3},{"from":"左鎮區","to":"左鎮區","value":55},{"from":"左鎮區","to":"安南區","value":2},{"from":"左鎮區","to":"新化區","value":15},{"from":"永康區","to":"七股區","value":2},{"from":"永康區","to":"大內區","value":12},{"from":"永康區","to":"山上區","value":7},{"from":"永康區","to":"中西區","value":298},{"from":"永康區","to":"仁德區","value":236},{"from":"永康區","to":"北門區","value":4},{"from":"永康區","to":"北區","value":610},{"from":"永康區","to":"永康區","value":12015},{"from":"永康區","to":"玉井區","value":5},{"from":"永康區","to":"安平區","value":123},{"from":"永康區","to":"安定區","value":43},{"from":"永康區","to":"安南區","value":419},{"from":"永康區","to":"西港區","value":45},{"from":"永康區","to":"佳里區","value":27},{"from":"永康區","to":"官田區","value":15},{"from":"永康區","to":"東山區","value":2},{"from":"永康區","to":"東區","value":760},{"from":"永康區","to":"南區","value":172},{"from":"永康區","to":"楠西區","value":2},{"from":"永康區","to":"將軍區","value":7},{"from":"永康區","to":"麻豆區","value":18},{"from":"永康區","to":"善化區","value":125},{"from":"永康區","to":"新化區","value":207},{"from":"永康區","to":"新市區","value":220},{"from":"永康區","to":"新營區","value":15},{"from":"永康區","to":"學甲區","value":12},{"from":"永康區","to":"龍崎區","value":3},{"from":"永康區","to":"歸仁區","value":151},{"from":"永康區","to":"關廟區","value":45},{"from":"永康區","to":"鹽水區","value":3},{"from":"玉井區","to":"大內區","value":4},{"from":"玉井區","to":"六甲區","value":2},{"from":"玉井區","to":"永康區","value":7},{"from":"玉井區","to":"玉井區","value":521},{"from":"玉井區","to":"安南區","value":6},{"from":"玉井區","to":"南化區","value":8},{"from":"玉井區","to":"楠西區","value":18},{"from":"玉井區","to":"新化區","value":3},{"from":"玉井區","to":"新市區","value":6},{"from":"玉井區","to":"新營區","value":2},{"from":"白河區","to":"北區","value":3},{"from":"白河區","to":"白河區","value":880},{"from":"白河區","to":"官田區","value":3},{"from":"白河區","to":"東山區","value":23},{"from":"白河區","to":"後壁區","value":28},{"from":"白河區","to":"柳營區","value":3},{"from":"白河區","to":"新市區","value":6},{"from":"白河區","to":"新營區","value":46},{"from":"安平區","to":"七股區","value":2},{"from":"安平區","to":"中西區","value":504},{"from":"安平區","to":"仁德區","value":50},{"from":"安平區","to":"北區","value":226},{"from":"安平區","to":"永康區","value":124},{"from":"安平區","to":"安平區","value":2336},{"from":"安平區","to":"安定區","value":9},{"from":"安平區","to":"安南區","value":161},{"from":"安平區","to":"西港區","value":3},{"from":"安平區","to":"佳里區","value":9},{"from":"安平區","to":"東區","value":229},{"from":"安平區","to":"南區","value":339},{"from":"安平區","to":"新化區","value":3},{"from":"安平區","to":"新市區","value":26},{"from":"安平區","to":"新營區","value":9},{"from":"安平區","to":"學甲區","value":2},{"from":"安平區","to":"歸仁區","value":21},{"from":"安平區","to":"關廟區","value":3},{"from":"安平區","to":"鹽水區","value":2},{"from":"安定區","to":"大內區","value":2},{"from":"安定區","to":"中西區","value":7},{"from":"安定區","to":"仁德區","value":2},{"from":"安定區","to":"北區","value":11},{"from":"安定區","to":"永康區","value":46},{"from":"安定區","to":"安平區","value":8},{"from":"安定區","to":"安定區","value":660},{"from":"安定區","to":"安南區","value":108},{"from":"安定區","to":"西港區","value":17},{"from":"安定區","to":"佳里區","value":14},{"from":"安定區","to":"官田區","value":2},{"from":"安定區","to":"東區","value":9},{"from":"安定區","to":"南區","value":6},{"from":"安定區","to":"後壁區","value":4},{"from":"安定區","to":"麻豆區","value":4},{"from":"安定區","to":"善化區","value":60},{"from":"安定區","to":"新市區","value":47},{"from":"安定區","to":"學甲區","value":5},{"from":"安南區","to":"七股區","value":13},{"from":"安南區","to":"大內區","value":2},{"from":"安南區","to":"山上區","value":3},{"from":"安南區","to":"中西區","value":299},{"from":"安南區","to":"仁德區","value":51},{"from":"安南區","to":"六甲區","value":4},{"from":"安南區","to":"北門區","value":3},{"from":"安南區","to":"北區","value":507},{"from":"安南區","to":"左鎮區","value":2},{"from":"安南區","to":"永康區","value":419},{"from":"安南區","to":"玉井區","value":6},{"from":"安南區","to":"安平區","value":155},{"from":"安南區","to":"安定區","value":109},{"from":"安南區","to":"安南區","value":7391},{"from":"安南區","to":"西港區","value":46},{"from":"安南區","to":"佳里區","value":46},{"from":"安南區","to":"官田區","value":2},{"from":"安南區","to":"東區","value":197},{"from":"安南區","to":"南區","value":177},{"from":"安南區","to":"柳營區","value":2},{"from":"安南區","to":"麻豆區","value":34},{"from":"安南區","to":"善化區","value":32},{"from":"安南區","to":"新化區","value":18},{"from":"安南區","to":"新市區","value":150},{"from":"安南區","to":"新營區","value":12},{"from":"安南區","to":"學甲區","value":5},{"from":"安南區","to":"歸仁區","value":23},{"from":"安南區","to":"關廟區","value":4},{"from":"安南區","to":"鹽水區","value":4},{"from":"西港區","to":"七股區","value":11},{"from":"西港區","to":"中西區","value":7},{"from":"西港區","to":"北區","value":20},{"from":"西港區","to":"永康區","value":46},{"from":"西港區","to":"安平區","value":2},{"from":"西港區","to":"安定區","value":13},{"from":"西港區","to":"安南區","value":51},{"from":"西港區","to":"西港區","value":602},{"from":"西港區","to":"佳里區","value":93},{"from":"西港區","to":"東區","value":6},{"from":"西港區","to":"南區","value":3},{"from":"西港區","to":"麻豆區","value":20},{"from":"西港區","to":"善化區","value":9},{"from":"西港區","to":"新市區","value":24},{"from":"西港區","to":"新營區","value":2},{"from":"西港區","to":"學甲區","value":4},{"from":"佳里區","to":"七股區","value":96},{"from":"佳里區","to":"中西區","value":7},{"from":"佳里區","to":"北門區","value":24},{"from":"佳里區","to":"北區","value":17},{"from":"佳里區","to":"永康區","value":26},{"from":"佳里區","to":"安平區","value":6},{"from":"佳里區","to":"安定區","value":17},{"from":"佳里區","to":"安南區","value":48},{"from":"佳里區","to":"西港區","value":86},{"from":"佳里區","to":"佳里區","value":1857},{"from":"佳里區","to":"官田區","value":6},{"from":"佳里區","to":"東區","value":16},{"from":"佳里區","to":"柳營區","value":1},{"from":"佳里區","to":"將軍區","value":65},{"from":"佳里區","to":"麻豆區","value":89},{"from":"佳里區","to":"善化區","value":23},{"from":"佳里區","to":"新市區","value":34},{"from":"佳里區","to":"新營區","value":4},{"from":"佳里區","to":"學甲區","value":47},{"from":"官田區","to":"下營區","value":9},{"from":"官田區","to":"大內區","value":6},{"from":"官田區","to":"六甲區","value":92},{"from":"官田區","to":"永康區","value":12},{"from":"官田區","to":"白河區","value":2},{"from":"官田區","to":"安定區","value":2},{"from":"官田區","to":"安南區","value":2},{"from":"官田區","to":"佳里區","value":6},{"from":"官田區","to":"官田區","value":1022},{"from":"官田區","to":"東區","value":5},{"from":"官田區","to":"後壁區","value":2},{"from":"官田區","to":"柳營區","value":16},{"from":"官田區","to":"麻豆區","value":51},{"from":"官田區","to":"善化區","value":23},{"from":"官田區","to":"新市區","value":27},{"from":"官田區","to":"新營區","value":31},{"from":"官田區","to":"學甲區","value":2},{"from":"官田區","to":"鹽水區","value":3},{"from":"東山區","to":"六甲區","value":4},{"from":"東山區","to":"永康區","value":2},{"from":"東山區","to":"白河區","value":23},{"from":"東山區","to":"東山區","value":960},{"from":"東山區","to":"後壁區","value":3},{"from":"東山區","to":"柳營區","value":13},{"from":"東山區","to":"新營區","value":86},{"from":"東區","to":"七股區","value":3},{"from":"東區","to":"下營區","value":7},{"from":"東區","to":"中西區","value":602},{"from":"東區","to":"仁德區","value":531},{"from":"東區","to":"北門區","value":2},{"from":"東區","to":"北區","value":566},{"from":"東區","to":"左鎮區","value":3},{"from":"東區","to":"永康區","value":766},{"from":"東區","to":"白河區","value":3},{"from":"東區","to":"安平區","value":225},{"from":"東區","to":"安定區","value":8},{"from":"東區","to":"安南區","value":188},{"from":"東區","to":"西港區","value":6},{"from":"東區","to":"佳里區","value":16},{"from":"東區","to":"官田區","value":6},{"from":"東區","to":"東區","value":7826},{"from":"東區","to":"南區","value":461},{"from":"東區","to":"後壁區","value":2},{"from":"東區","to":"麻豆區","value":2},{"from":"東區","to":"善化區","value":28},{"from":"東區","to":"新化區","value":31},{"from":"東區","to":"新市區","value":75},{"from":"東區","to":"新營區","value":28},{"from":"東區","to":"學甲區","value":4},{"from":"東區","to":"歸仁區","value":127},{"from":"東區","to":"關廟區","value":39},{"from":"東區","to":"鹽水區","value":6},{"from":"南化區","to":"玉井區","value":7},{"from":"南化區","to":"佳里區","value":2},{"from":"南化區","to":"南化區","value":251},{"from":"南化區","to":"楠西區","value":3},{"from":"南化區","to":"麻豆區","value":1},{"from":"南區","to":"七股區","value":3},{"from":"南區","to":"中西區","value":536},{"from":"南區","to":"仁德區","value":116},{"from":"南區","to":"北區","value":218},{"from":"南區","to":"永康區","value":177},{"from":"南區","to":"安平區","value":344},{"from":"南區","to":"安定區","value":3},{"from":"南區","to":"安南區","value":172},{"from":"南區","to":"西港區","value":3},{"from":"南區","to":"東區","value":470},{"from":"南區","to":"南區","value":6022},{"from":"南區","to":"麻豆區","value":9},{"from":"南區","to":"善化區","value":11},{"from":"南區","to":"新化區","value":7},{"from":"南區","to":"新市區","value":74},{"from":"南區","to":"新營區","value":3},{"from":"南區","to":"歸仁區","value":29},{"from":"南區","to":"關廟區","value":9},{"from":"楠西區","to":"永康區","value":2},{"from":"楠西區","to":"玉井區","value":18},{"from":"楠西區","to":"楠西區","value":343},{"from":"後壁區","to":"仁德區","value":4},{"from":"後壁區","to":"白河區","value":25},{"from":"後壁區","to":"安定區","value":4},{"from":"後壁區","to":"官田區","value":2},{"from":"後壁區","to":"東山區","value":5},{"from":"後壁區","to":"東區","value":2},{"from":"後壁區","to":"後壁區","value":585},{"from":"後壁區","to":"柳營區","value":18},{"from":"後壁區","to":"新市區","value":2},{"from":"後壁區","to":"新營區","value":135},{"from":"後壁區","to":"鹽水區","value":18},{"from":"柳營區","to":"下營區","value":12},{"from":"柳營區","to":"六甲區","value":9},{"from":"柳營區","to":"白河區","value":3},{"from":"柳營區","to":"佳里區","value":1},{"from":"柳營區","to":"官田區","value":18},{"from":"柳營區","to":"東山區","value":11},{"from":"柳營區","to":"後壁區","value":18},{"from":"柳營區","to":"柳營區","value":1110},{"from":"柳營區","to":"麻豆區","value":6},{"from":"柳營區","to":"善化區","value":8},{"from":"柳營區","to":"新化區","value":2},{"from":"柳營區","to":"新市區","value":7},{"from":"柳營區","to":"新營區","value":125},{"from":"柳營區","to":"學甲區","value":2},{"from":"柳營區","to":"鹽水區","value":12},{"from":"將軍區","to":"七股區","value":1},{"from":"將軍區","to":"中西區","value":2},{"from":"將軍區","to":"北門區","value":3},{"from":"將軍區","to":"北區","value":4},{"from":"將軍區","to":"永康區","value":7},{"from":"將軍區","to":"安南區","value":2},{"from":"將軍區","to":"西港區","value":2},{"from":"將軍區","to":"佳里區","value":64},{"from":"將軍區","to":"將軍區","value":414},{"from":"將軍區","to":"麻豆區","value":5},{"from":"將軍區","to":"新市區","value":3},{"from":"將軍區","to":"新營區","value":4},{"from":"將軍區","to":"學甲區","value":23},{"from":"麻豆區","to":"七股區","value":7},{"from":"麻豆區","to":"下營區","value":16},{"from":"麻豆區","to":"大內區","value":2},{"from":"麻豆區","to":"山上區","value":11},{"from":"麻豆區","to":"仁德區","value":3},{"from":"麻豆區","to":"六甲區","value":17},{"from":"麻豆區","to":"北門區","value":4},{"from":"麻豆區","to":"北區","value":6},{"from":"麻豆區","to":"永康區","value":19},{"from":"麻豆區","to":"白河區","value":2},{"from":"麻豆區","to":"安定區","value":5},{"from":"麻豆區","to":"安南區","value":33},{"from":"麻豆區","to":"西港區","value":21},{"from":"麻豆區","to":"佳里區","value":79},{"from":"麻豆區","to":"官田區","value":50},{"from":"麻豆區","to":"東區","value":3},{"from":"麻豆區","to":"南化區","value":1},{"from":"麻豆區","to":"南區","value":10},{"from":"麻豆區","to":"柳營區","value":6},{"from":"麻豆區","to":"將軍區","value":3},{"from":"麻豆區","to":"麻豆區","value":1874},{"from":"麻豆區","to":"善化區","value":48},{"from":"麻豆區","to":"新化區","value":5},{"from":"麻豆區","to":"新市區","value":50},{"from":"麻豆區","to":"新營區","value":24},{"from":"麻豆區","to":"學甲區","value":43},{"from":"善化區","to":"下營區","value":2},{"from":"善化區","to":"大內區","value":7},{"from":"善化區","to":"山上區","value":18},{"from":"善化區","to":"中西區","value":17},{"from":"善化區","to":"仁德區","value":11},{"from":"善化區","to":"六甲區","value":5},{"from":"善化區","to":"北區","value":16},{"from":"善化區","to":"永康區","value":124},{"from":"善化區","to":"安定區","value":64},{"from":"善化區","to":"安南區","value":33},{"from":"善化區","to":"西港區","value":3},{"from":"善化區","to":"佳里區","value":20},{"from":"善化區","to":"官田區","value":22},{"from":"善化區","to":"東區","value":27},{"from":"善化區","to":"南區","value":9},{"from":"善化區","to":"柳營區","value":7},{"from":"善化區","to":"麻豆區","value":50},{"from":"善化區","to":"善化區","value":1489},{"from":"善化區","to":"新化區","value":10},{"from":"善化區","to":"新市區","value":155},{"from":"善化區","to":"新營區","value":13},{"from":"善化區","to":"歸仁區","value":13},{"from":"善化區","to":"關廟區","value":4},{"from":"新化區","to":"七股區","value":2},{"from":"新化區","to":"大內區","value":3},{"from":"新化區","to":"山上區","value":15},{"from":"新化區","to":"中西區","value":25},{"from":"新化區","to":"仁德區","value":18},{"from":"新化區","to":"北區","value":21},{"from":"新化區","to":"左鎮區","value":15},{"from":"新化區","to":"永康區","value":201},{"from":"新化區","to":"玉井區","value":4},{"from":"新化區","to":"安平區","value":3},{"from":"新化區","to":"安南區","value":22},{"from":"新化區","to":"東區","value":33},{"from":"新化區","to":"南區","value":7},{"from":"新化區","to":"柳營區","value":2},{"from":"新化區","to":"麻豆區","value":4},{"from":"新化區","to":"善化區","value":10},{"from":"新化區","to":"新化區","value":1163},{"from":"新化區","to":"新市區","value":80},{"from":"新化區","to":"新營區","value":3},{"from":"新化區","to":"歸仁區","value":9},{"from":"新化區","to":"關廟區","value":8},{"from":"新市區","to":"下營區","value":6},{"from":"新市區","to":"大內區","value":8},{"from":"新市區","to":"山上區","value":18},{"from":"新市區","to":"中西區","value":54},{"from":"新市區","to":"仁德區","value":37},{"from":"新市區","to":"六甲區","value":7},{"from":"新市區","to":"北門區","value":5},{"from":"新市區","to":"北區","value":106},{"from":"新市區","to":"永康區","value":220},{"from":"新市區","to":"玉井區","value":5},{"from":"新市區","to":"白河區","value":3},{"from":"新市區","to":"安平區","value":25},{"from":"新市區","to":"安定區","value":46},{"from":"新市區","to":"安南區","value":152},{"from":"新市區","to":"西港區","value":24},{"from":"新市區","to":"佳里區","value":25},{"from":"新市區","to":"官田區","value":27},{"from":"新市區","to":"東區","value":80},{"from":"新市區","to":"南區","value":73},{"from":"新市區","to":"後壁區","value":3},{"from":"新市區","to":"柳營區","value":5},{"from":"新市區","to":"麻豆區","value":47},{"from":"新市區","to":"善化區","value":142},{"from":"新市區","to":"新化區","value":82},{"from":"新市區","to":"新市區","value":1563},{"from":"新市區","to":"新營區","value":28},{"from":"新市區","to":"學甲區","value":14},{"from":"新市區","to":"歸仁區","value":31},{"from":"新市區","to":"關廟區","value":12},{"from":"新市區","to":"鹽水區","value":10},{"from":"新營區","to":"下營區","value":35},{"from":"新營區","to":"仁德區","value":2},{"from":"新營區","to":"六甲區","value":47},{"from":"新營區","to":"北門區","value":5},{"from":"新營區","to":"北區","value":8},{"from":"新營區","to":"永康區","value":21},{"from":"新營區","to":"玉井區","value":2},{"from":"新營區","to":"白河區","value":45},{"from":"新營區","to":"安平區","value":9},{"from":"新營區","to":"安南區","value":8},{"from":"新營區","to":"西港區","value":2},{"from":"新營區","to":"佳里區","value":5},{"from":"新營區","to":"官田區","value":30},{"from":"新營區","to":"東山區","value":80},{"from":"新營區","to":"東區","value":27},{"from":"新營區","to":"南區","value":3},{"from":"新營區","to":"後壁區","value":127},{"from":"新營區","to":"柳營區","value":119},{"from":"新營區","to":"將軍區","value":2},{"from":"新營區","to":"麻豆區","value":25},{"from":"新營區","to":"善化區","value":13},{"from":"新營區","to":"新化區","value":3},{"from":"新營區","to":"新市區","value":28},{"from":"新營區","to":"新營區","value":3193},{"from":"新營區","to":"學甲區","value":8},{"from":"新營區","to":"鹽水區","value":234},{"from":"學甲區","to":"七股區","value":3},{"from":"學甲區","to":"中西區","value":3},{"from":"學甲區","to":"仁德區","value":2},{"from":"學甲區","to":"北門區","value":51},{"from":"學甲區","to":"永康區","value":11},{"from":"學甲區","to":"安平區","value":2},{"from":"學甲區","to":"安定區","value":5},{"from":"學甲區","to":"安南區","value":4},{"from":"學甲區","to":"西港區","value":6},{"from":"學甲區","to":"佳里區","value":46},{"from":"學甲區","to":"東區","value":5},{"from":"學甲區","to":"柳營區","value":2},{"from":"學甲區","to":"將軍區","value":23},{"from":"學甲區","to":"麻豆區","value":42},{"from":"學甲區","to":"新市區","value":16},{"from":"學甲區","to":"新營區","value":7},{"from":"學甲區","to":"學甲區","value":510},{"from":"學甲區","to":"鹽水區","value":12},{"from":"龍崎區","to":"中西區","value":3},{"from":"龍崎區","to":"永康區","value":3},{"from":"龍崎區","to":"龍崎區","value":67},{"from":"龍崎區","to":"歸仁區","value":18},{"from":"龍崎區","to":"關廟區","value":28},{"from":"歸仁區","to":"中西區","value":41},{"from":"歸仁區","to":"仁德區","value":268},{"from":"歸仁區","to":"北區","value":25},{"from":"歸仁區","to":"永康區","value":158},{"from":"歸仁區","to":"安平區","value":21},{"from":"歸仁區","to":"安南區","value":22},{"from":"歸仁區","to":"東區","value":135},{"from":"歸仁區","to":"南區","value":26},{"from":"歸仁區","to":"善化區","value":12},{"from":"歸仁區","to":"新化區","value":8},{"from":"歸仁區","to":"新市區","value":32},{"from":"歸仁區","to":"龍崎區","value":11},{"from":"歸仁區","to":"歸仁區","value":2214},{"from":"歸仁區","to":"關廟區","value":118},{"from":"關廟區","to":"中西區","value":29},{"from":"關廟區","to":"仁德區","value":51},{"from":"關廟區","to":"六甲區","value":2},{"from":"關廟區","to":"北區","value":18},{"from":"關廟區","to":"永康區","value":45},{"from":"關廟區","to":"玉井區","value":2},{"from":"關廟區","to":"安平區","value":3},{"from":"關廟區","to":"安南區","value":4},{"from":"關廟區","to":"東區","value":29},{"from":"關廟區","to":"南區","value":9},{"from":"關廟區","to":"善化區","value":4},{"from":"關廟區","to":"新化區","value":10},{"from":"關廟區","to":"新市區","value":13},{"from":"關廟區","to":"龍崎區","value":38},{"from":"關廟區","to":"歸仁區","value":119},{"from":"關廟區","to":"關廟區","value":1300},{"from":"鹽水區","to":"下營區","value":6},{"from":"鹽水區","to":"永康區","value":3},{"from":"鹽水區","to":"安南區","value":4},{"from":"鹽水區","to":"官田區","value":2},{"from":"鹽水區","to":"東山區","value":6},{"from":"鹽水區","to":"東區","value":7},{"from":"鹽水區","to":"後壁區","value":17},{"from":"鹽水區","to":"柳營區","value":13},{"from":"鹽水區","to":"麻豆區","value":2},{"from":"鹽水區","to":"新市區","value":11},{"from":"鹽水區","to":"新營區","value":224},{"from":"鹽水區","to":"學甲區","value":13},{"from":"鹽水區","to":"鹽水區","value":1091}
+]
+
+chart.dataFields.fromName = "from";
+chart.dataFields.toName = "to";
+chart.dataFields.value = "value";
+chart.nodePadding = 0.5;
+chart.minNodeSize = 0.01;
+chart.startAngle = 80;
+chart.endAngle = chart.startAngle + 360;
+chart.fontSize = 14;
+
+var nodeTemplate = chart.nodes.template;
+nodeTemplate.showSystemTooltip = true;
+nodeTemplate.propertyFields.fill = "color";
+
+// when rolled over the node, make all the links rolled-over
+nodeTemplate.events.on("over", function(event) {    
+    var node = event.target;
+    node.outgoingDataItems.each(function(dataItem) {
+        if(dataItem.toNode){
+            dataItem.link.isHover = true;
+            dataItem.toNode.label.isHover = true;
+        }
+    })
+    node.incomingDataItems.each(function(dataItem) {
+        if(dataItem.fromNode){
+            dataItem.link.isHover = true;
+            dataItem.fromNode.label.isHover = true;
+        }
+    }) 
+
+    node.label.isHover = true;   
+})
+
+// when rolled out from the node, make all the links rolled-out
+nodeTemplate.events.on("out", function(event) {
+    var node = event.target;
+    node.outgoingDataItems.each(function(dataItem) {        
+        if(dataItem.toNode){
+            dataItem.link.isHover = false;                
+            dataItem.toNode.label.isHover = false;
+        }
+    })
+    node.incomingDataItems.each(function(dataItem) {
+        if(dataItem.fromNode){
+            dataItem.link.isHover = false;
+           dataItem.fromNode.label.isHover = false;
+        }
+    })
+
+    node.label.isHover = false;
+})
+
+var label = nodeTemplate.label;
+label.relativeRotation = 90;
+label.fillOpacity = 0.4;
+let labelHS = label.states.create("hover");
+labelHS.properties.fillOpacity = 1;
+
+nodeTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+
+// link template
+var linkTemplate = chart.links.template;
+linkTemplate.strokeOpacity = 0;
+linkTemplate.fillOpacity = 0.2;
+linkTemplate.tooltipText = "從 {fromName} 到 {toName}：{value.value}";
+
+var hoverState = linkTemplate.states.create("hover");
+hoverState.properties.fillOpacity = 0.8;
+hoverState.properties.strokeOpacity = 0.8;
+
+</script>
+</body>
+
+</html>
