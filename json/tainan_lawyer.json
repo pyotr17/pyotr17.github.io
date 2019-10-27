@@ -1,0 +1,28 @@
+var tainan_lawyer = {
+"type": "FeatureCollection",
+"name": "tainan_lawyer",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "name": "公證役場 余繩章, 丸三組運送店 遠藤彥四郎", "address": "大正3-2-1", "type": 8, "sort2": "公證人" }, "geometry": { "type": "Point", "coordinates": [ 120.211433047978758, 22.996512750615633 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "沈榮法律事務所", "address": "大宮3-26", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.20089092099181, 22.991902518167624 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "安里法律事務所 安里積千代", "address": "大宮3-34", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.200935119108422, 22.992078632192378 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "大山司法書士事務所", "address": "大宮4-14", "type": 8, "sort2": "代書" }, "geometry": { "type": "Point", "coordinates": [ 120.200300993944907, 22.990323912007586 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "朝日商事社, 田卷藤三郎", "address": "大宮4-40", "type": 8, "sort2": "代書" }, "geometry": { "type": "Point", "coordinates": [ 120.200461009959383, 22.991075089797363 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "津田法律事務所 津田毅一", "address": "大宮4-50", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.200571082219327, 22.99154173202643 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "有水法律事務所 有水定次郎", "address": "大宮4-8", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.20081388295138, 22.991519307766684 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "宮本彌久次", "address": "大宮4-9", "type": 8, "sort2": "代書" }, "geometry": { "type": "Point", "coordinates": [ 120.200807729079855, 22.991479861350566 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "川村彌永吉法律事務所", "address": "明治2-84", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.204449321746964, 22.998440773540747 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "王清風法律事務所", "address": "白金1-14", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.203237267227976, 22.992679966889959 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "井上敏公證役場, 千代田生命保險相互會社臺南會所", "address": "西門4-56", "type": 8, "sort2": "公證, 保險" }, "geometry": { "type": "Point", "coordinates": [ 120.199631340565119, 22.992704652313776 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "菅元生公證役場", "address": "花園1-8", "type": 8, "sort2": "公證人" }, "geometry": { "type": "Point", "coordinates": [ 120.205343163342619, 22.993580204227033 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "和田二三松", "address": "花園2-135", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.205937954611542, 22.996241403013361 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "歐清石", "address": "南門1-63-3", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.202899185178325, 22.989276954177686 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "山本諫", "address": "綠51", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.205136916346973, 22.988846639157437 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "黃百祿, 八木齒科醫院 八木庫吉", "address": "錦2-91", "type": 8, "sort2": "辯護士\/醫院" }, "geometry": { "type": "Point", "coordinates": [ 120.202938077757793, 22.993211613417728 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "臺南郵便局 電話主任官舍, 西川法律事務所 西川利藤太", "address": "鹽埕5", "type": 8, "sort2": "辯護士\/官舍" }, "geometry": { "type": "Point", "coordinates": [ 120.196457464873674, 22.98909142900526 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "芝沼法律事務所", "address": "錦1-91", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.203821056720386, 22.992824919835652 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "天野法律事務所", "address": "清水1-15", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.206317177378182, 22.992589092074283 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "福地辯護士事務所 福地信夫", "address": "清水1-20", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.206283600160916, 22.992429980964641 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "皆川辯護士 皆川富次", "address": "開山2-95", "type": 8, "sort2": "辯護士" }, "geometry": { "type": "Point", "coordinates": [ 120.20699794193574, 22.989763904975028 ] } }
+]
+}

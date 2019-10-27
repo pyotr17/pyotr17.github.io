@@ -7,16 +7,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <style>
   body {
-    font-family: "Microsoft JhengHei";
-    line-height: 1.8;
+    font-family:"Microsoft JhengHei";
+    line-height:1.8;
   }
   h4 {
-	font-size: 16px;
-	margin-top: 10px;
-	font-weight: bold;
+	font-size:16px;
+	margin-top:10px;
+	font-weight:bold;
+  }
+  h6 {
+  font-size:8px;
   }
   p {
 	margin-top:10px;
@@ -25,17 +27,14 @@
   	margin-bottom:60px;
   }
   .container {
-    padding: 80px 80px 40px;
+    padding:80px 0 40px;
   }
   .cover {
   	width:100%;
-	transition: box-shadow .3s;
+	transition:box-shadow .3s;
   }
   .cover:hover {
-	box-shadow: 0 0 12px rgba(33,33,33,.5); 
-  }
-  h6 {
-  font-size: 8px;
+	box-shadow:0 0 12px rgba(33,33,33,.5); 
   }
   </style>
 </head>
@@ -51,16 +50,16 @@
 	<div class="row">
 
 		<div class="col-sm-4 window">
-			<a href="tainan_traffic.html" target="_blank">
+			<a href="tainan_traffic.html">
 				<img src="assets/traffic_thumb.jpg" class="img-responsive cover">
 			</a>
-			<h4>臺南市交通旅次</h4>
-			<h5>2012年臺南市各區的交通旅次分佈</h5>
+			<h4>台南市交通旅次</h4>
+			<h5>2012年台南市各區的交通旅次分佈，顯示起點域中點之間的關係</h5>
 			<p>Tools: amCharts</p>
 		</div>
 
 		<div class="col-sm-4 window">
-			<a href="taiwan_den.html" target="_blank">
+			<a href="taiwan_den.html">
 				<img src="assets/pop_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>台灣人口密度</h4>
@@ -69,7 +68,7 @@
 		</div>
   
 		<div class="col-sm-4 window">
-			<a href="https://pyotr17.github.io/taiwan-tavel-time/" target="_blank">
+			<a href="https://pyotr17.github.io/taiwan-tavel-time/">
 				<img src="assets/walk_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>旅行時間視覺化</h4>
@@ -78,7 +77,34 @@
 		</div>
 		
 		<div class="col-sm-4 window">
-			<a href="https://pyotr17.github.io/FindingMunich/" target="_blank">
+			<a href="urban_fabric.html">
+				<img src="assets/urban_thumb.jpg" class="img-responsive cover">
+			</a>
+			<h4>都市空間紋理</h4>
+			<h5>以圖底圖(Figuure-ground Diagram)呈現都市型態與都市中的虛實空間</h5>
+			<p>Tools: QGIS, Photoshop, Illustrator</p>
+		</div>
+
+		<div class="col-sm-4 window">
+			<a href="mrt.html">
+				<img src="assets/krt_thumb.jpg" class="img-responsive cover">
+			</a>
+			<h4>哪個捷運站比較近？</h4>
+			<h5>以Voronoi diagram表示各台北捷運與高雄捷運各站點的服務範圍</h5>
+			<p>Tools: Leaflet</p>
+		</div>
+
+		<div class="col-sm-4 window">
+			<a href="old_tainan.html">
+				<img src="assets/oldtainan_thumb.jpg" class="img-responsive cover">
+			</a>
+			<h4>日治時期的台南市</h4>
+			<h5>台南市日治時期後期各機關、設施、商家的位置與現今地圖對照</h5>
+			<p>Tools: QGIS, Leaflet</p>
+		</div>
+		
+		<div class="col-sm-4 window">
+			<a href="https://pyotr17.github.io/FindingMunich/">
 				<img src="assets/munich_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>Finding Munich</h4>
@@ -87,16 +113,16 @@
 		</div>
 
 		<div class="col-sm-4 window">
-			<a href="https://0lukzivne4ucarizanr1na-on.drv.tw/krillisMissing/" target="_blank">
+			<a href="https://0lukzivne4ucarizanr1na-on.drv.tw/krillisMissing/">
 				<img src="assets/krillwhale_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>The krill is missing</h4>
-			<h5>以報導文學與互動探索海水溫度上升與磷蝦、藍鯨族群的關係</h5>
+			<h5>以報導文學與互動探索海水溫度上升及其對於磷蝦、藍鯨族群的關係</h5>
 			<p>Tools: D3.js</p>
 		</div>
 		
 		<div class="col-sm-4 window">
-			<a href="https://pyotr17.github.io/Urban-Planning-TW/" target="_blank">
+			<a href="https://pyotr17.github.io/Urban-Planning-TW/">
 				<img src="assets/up_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>台灣都市計畫發展歷程</h4>
@@ -105,26 +131,25 @@
 		</div>
 		
 		<div class="col-sm-4 window">
-			<a href="https://pyotr17.github.io/Taiwanese-Arcades-Studies/" target="_blank">
+			<a href="https://pyotr17.github.io/Taiwanese-Arcades-Studies/">
 				<img src="assets/archi_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>台灣街屋形式分期</h4>
-			<h5>以時間表整理各研究對於台灣日治時期街屋建築類型的分類</h5>
+			<h5>以時間表列出各研究對於台灣日治時期街屋建築類型的分類的差異</h5>
 			<p>Tools: vis.js</p>
 		</div>
 		
 		<div class="col-sm-4 window">
-			<a href="https://cartographymaster.eu/studentwork/migrating-butterflies-milkweed-butterflies-in-taiwan/" target="_blank">
+			<a href="https://cartographymaster.eu/studentwork/migrating-butterflies-milkweed-butterflies-in-taiwan/">
 				<img src="assets/butterfly_thumb.jpg" class="img-responsive cover">
 			</a>
 			<h4>台灣蝴蝶遷徙</h4>
-			<h5>介紹台灣斑蝶種類，和紫斑蝶(台灣島內遷徙)、青斑蝶(台日間遷徙)的行為</h5>
+			<h5>介紹台灣斑蝶種類，和紫斑蝶（台灣島內遷徙）、青斑蝶（台日間遷徙）的行為</h5>
 			<p>Tools: Photoshop, Illustrator</p>
 		</div>
 	</div>
 </div>
 </body>
-
 
 <footer class="container text-center">
 	<h6>Contact: cartodd897@gmail.com</h6>

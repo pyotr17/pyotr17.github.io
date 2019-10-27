@@ -1,0 +1,30 @@
+var tainan_other = {
+"type": "FeatureCollection",
+"name": "tainan_other",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "name": "臺南郵便局南鯤俱樂部", "address": "大正3-6-13", "type": 12, "sort2": "俱樂部" }, "geometry": { "type": "Point", "coordinates": [ 120.210402960384428, 22.997205272096075 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "臺南偕行社", "address": "北門2-7", "type": 12, "sort2": "俱樂部" }, "geometry": { "type": "Point", "coordinates": [ 120.211703490057388, 23.000071584071428 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "巡查教習所", "address": "幸1-7", "type": 12, "sort2": "講習所" }, "geometry": { "type": "Point", "coordinates": [ 120.205234337416456, 22.991472275934374 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "州幸俱樂部", "address": "幸1-11", "type": 12, "sort2": "俱樂部" }, "geometry": { "type": "Point", "coordinates": [ 120.205217659997047, 22.990864371906021 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "刑務所 泉會", "address": "泉104", "type": 12, "sort2": "俱樂部" }, "geometry": { "type": "Point", "coordinates": [ 120.197954243149638, 22.988433646834235 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "臺灣銀行臺南支店俱樂部, 支店長宿舍", "address": "綠20", "type": 12, "sort2": "俱樂部\/住宅" }, "geometry": { "type": "Point", "coordinates": [ 120.206460082050583, 22.988581928456011 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "臺南商工業協會", "address": "臺2-177", "type": 12, "sort2": "團體" }, "geometry": { "type": "Point", "coordinates": [ 120.20169832565432, 22.996725627405166 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "第一生命保險相互會社臺南事務所, 南洲俱樂部", "address": "錦2-38", "type": 12, "sort2": "保險\/俱樂部" }, "geometry": { "type": "Point", "coordinates": [ 120.201395477932735, 22.99391202180156 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "台灣史料館", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.160178699173983, 23.001307300380066 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "熱蘭遮城址", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.160820122634576, 23.001426993622118 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "北白川宮能久親王終焉之地", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.201217082530292, 22.990308181269324 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "北白川宮安海街御舍營所紀念碑", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.202893967002751, 22.991822204783077 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "普羅民遮城", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.202655876948285, 22.997597990599438 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "大東門", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.217372927636404, 22.987098662209487 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "大南門", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.203236127718768, 22.986760815939146 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "小西門", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.197508466981574, 22.989495483093766 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "伏見宮御駐營址", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.210228684649039, 22.993028140175504 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "億載金城", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.158862650078063, 22.987541813085947 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "孔子廟", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.204121926208501, 22.990543135889887 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "鄭成功舊宅址", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.209428430056448, 22.992868856363529 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "台南公會堂後庭", "address": null, "type": 12, "sort2": "記念物" }, "geometry": { "type": "Point", "coordinates": [ 120.206042863120686, 22.994935062060097 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "臺南在鄉軍人分會", "address": "開山1-65", "type": 12, "sort2": "團體" }, "geometry": { "type": "Point", "coordinates": [ 120.206062179659128, 22.991107978728337 ] } },
+{ "type": "Feature", "properties": { "id": null, "name": "愛護寮", "address": "東門3-69", "type": 12, "sort2": "慈善團" }, "geometry": { "type": "Point", "coordinates": [ 120.216038525066793, 22.986266426481993 ] } }
+]
+}

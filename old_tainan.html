@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>日治時期的台南市</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		font-family:"Microsoft JhengHei";
+	}
+	h1 {
+		font-size: 32px;
+		font-weight: bold;
+		padding-bottom:30px;
+	}
+	h4 {
+		text-align: center;
+	}
+	h5 {
+		font-size: 12px;
+		display: inline-block;
+		padding:0 20px 0 5px;
+	}
+	p {
+		margin-top:10px;
+		padding:0px 0 50px;
+	}
+	#map {
+		width: 100%;
+		height: 800px;
+	}
+	.leaflet-tooltip {
+		font-family:"Microsoft JhengHei";
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.container {
+		padding: 30px 0;
+	}
+	.label1 {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: 1px solid black;
+		display: inline-block;
+	}
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+	<h1 class="text-center">日治後期的台南</h1>
+	<p>地圖上標記了台南市在1930及40年代的機關和商家等設施分布，大部分資料來自1938年1月出版的《私製台南電話帖》和1937年9月出版的《臺南州電話帖》，
+	再使用QGIS對照於1933年的《台南火保地圖》，地圖中可見台南市各町丁目的番地位置，但圖中缺少竹園町、旭町、桶盤淺、鹽埕和安平等大字。
+	至於火保地圖上沒有的部分，部分可對照於《台南職業別明細圖》（<a href="http://gissrv4.sinica.edu.tw/gis/tainan.aspx">臺南市百年歷史地圖</a>中的為1936年出版），或是利用<a href="http://210.69.57.218/query/oldnew.jsp?menu=true&type=R">台南市新舊建地號查詢系統</a>
+	查詢舊地號現在的位置，再用<a href="https://easymap.land.moi.gov.tw/R02/Index">地籍圖資網路便民服務系統</a>定位現今的地點。</p>
+</div>
+
+<div class="container text-center">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="assets/私製台南電話帖.jpg" class="img-responsive">
+			<p>私製台南電話帖</p>
+		</div>
+		<div class="col-md-4">
+			<img src="assets/台南火保地圖.jpg" class="img-responsive">
+			<p>台南火保地圖</p>
+		</div>
+		<div class="col-md-4">
+			<img src="assets/1936台南職業別明細圖.jpg" class="img-responsive">
+			<p>台南職業別明細圖</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id='map'></div>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="label1" style="background-color:#80b1d3"></div><h5>機關、公共設施</h5>
+			<div class="label1" style="background-color:#bebada"></div><h5>餐飲、住宿</h5>
+			<div class="label1" style="background-color:#fb8072"></div><h5>金融、代理、仲介、股票、賃地</h5>
+			<div class="label1" style="background-color:#fccde5"></div><h5>商業(日用品、食品、雜貨等)</h5>
+			<div class="label1" style="background-color:#8dd3c7"></div><h5>醫療(醫師、按摩、針灸)</h5>
+			<div class="label1" style="background-color:#b3de69"></div><h5>律師、代書</h5>
+			<div class="label1" style="background-color:#fdb462"></div><h5>住宅、官舍</h5>
+			<div class="label1" style="background-color:#ffffb3"></div><h5>其他(記念物、俱樂部)</h5>
+		</div>
+	</div>
+</div>
+		
+<script src="json/tainan_admin.json" type="text/javascript"></script>
+<script src="json/tainan_bank.json" type="text/javascript"></script>
+<script src="json/tainan_business.json" type="text/javascript"></script>
+<script src="json/tainan_hospital.json" type="text/javascript"></script>
+<script src="json/tainan_lawyer.json" type="text/javascript"></script>
+<script src="json/tainan_other.json" type="text/javascript"></script>
+<script src="json/tainan_residence.json" type="text/javascript"></script>
+<script src="json/tainan_restaurant.json" type="text/javascript"></script>
+
+<script>
+	var map = L.map('map', {
+		center: [22.996969, 120.202199],
+		zoom: 16,
+		minZoom: 11,
+		maxZoom: 20,
+	});
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicW9vMTA3MiIsImEiOiJjaW45eXI4dnUwZnBjdWZsdzNrcXV3M3A5In0.zIrgkrF1gJi8PiFg03bTfw', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+	var adminLayer = L.geoJSON(tainan_admin, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#80b1d3',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+	map.addLayer(adminLayer);
+	
+	var restaurantLayer = L.geoJSON(tainan_restaurant, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#bebada',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+	
+	var bankLayer = L.geoJSON(tainan_bank, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#fb8072',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+
+	var businessLayer = L.geoJSON(tainan_business, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#fccde5',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+
+	var hospitalLayer = L.geoJSON(tainan_hospital, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#8dd3c7',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+	
+	var lawyerLayer = L.geoJSON(tainan_lawyer, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#b3de69',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+	
+	var residenceLayer = L.geoJSON(tainan_residence, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#fdb462',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+
+	var otherLayer = L.geoJSON(tainan_other, {
+		pointToLayer: function(feature,latlng){
+			label = String(feature.properties.name)
+			return new L.CircleMarker(latlng, {
+				fillColor: '#ffffb3',
+				weight: 1,
+				radius: 5,
+				color: "#000",
+				opacity: 1,
+				fillOpacity: 0.8
+			}).bindTooltip(label, {permanent: true}).openTooltip();
+		}
+	});
+	
+	var overlayMaps = {
+		"機關、公設": adminLayer,
+		"餐飲、住宿": restaurantLayer,
+		"金融相關": bankLayer,
+		"商業": businessLayer,
+		"醫療": hospitalLayer,
+		"律師、代書": lawyerLayer,
+		"住宅、官舍": residenceLayer,
+		"其他": otherLayer
+	};
+
+	L.control.layers({},overlayMaps).addTo(map);
+</script>
+
+</body>
+</html>

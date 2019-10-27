@@ -1,0 +1,655 @@
+var krt_station = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "小港"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3538400000001,
+          22.564822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高雄國際機場"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.342125,
+          22.570199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "草衙"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3284430000001,
+          22.580363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "前鎮高中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.319551,
+          22.588356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "凱旋"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31554937362671,
+          22.59595476594997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "獅甲"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.308189,
+          22.60587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "三多商圈"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.304499,
+          22.614011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "中央公園"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30115100000012,
+          22.624628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "美麗島"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.301957,
+          22.631387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高雄車站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.302664,
+          22.639769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "後驛"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30336100000011,
+          22.648314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "凹子底"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.303104,
+          22.657126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "巨蛋"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.303308,
+          22.666135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "生態園區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.306618,
+          22.676738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "左營"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.309219,
+          22.688073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "世運"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.302526,
+          22.701622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "油廠國小"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30232500000011,
+          22.708479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "楠梓加工區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.307133,
+          22.718671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "後勁"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31623600000012,
+          22.7223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "都會公園"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.320978,
+          22.729403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "青埔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31767900000011,
+          22.744399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "橋頭糖廠"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.314466,
+          22.753398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "橋頭火車站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.310936,
+          22.760452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "南岡山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.301774,
+          22.780544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "西子灣"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2749514579773,
+          22.62127028732196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鹽埕埔"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.28372800000011,
+          22.623538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "市議會"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.294886,
+          22.629002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "美麗島"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.301957,
+          22.631387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "信義國小"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.311622,
+          22.630745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "文化中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.317599,
+          22.630292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "五塊厝"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.328381,
+          22.629331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "技擊館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3345230000001,
+          22.627291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "衛武營"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.34095,
+          22.625162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳山西站"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.348267,
+          22.625331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳山"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.355262,
+          22.625994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大東"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.36338400000011,
+          22.625197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "鳳山國中"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.37247700000012,
+          22.624915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "大寮"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3897730000001,
+          22.622423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "高雄展覽館"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.298022,
+          22.610133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "光榮碼頭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.293234,
+          22.616805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "凱旋瑞田"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3197990000001,
+          22.599533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "旅運中心"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.293438,
+          22.611643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "駁二蓬萊"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.279923,
+          22.6205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "駁二大義"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.284204,
+          22.618562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "夢時代"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.305004,
+          22.594886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "籬仔內"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.324651,
+          22.604625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "經貿園區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.30266,
+          22.600961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "凱旋中華"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.31051700000012,
+          22.593656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "軟體園區"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.300832,
+          22.605684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "真愛碼頭"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.289466,
+          22.619315
+        ]
+      }
+    }
+  ]
+}
